@@ -2220,7 +2220,7 @@ void LMIC_reset (void) {
 #if defined(CFG_us915)
     //initDefaultChannels(); //Zaki : commented this out, we only interested on some channels only.
     mapChannels(0,0x0000);   //chan 0 = 915.2 (base) - chan 15
-	mapChannels(1,0x7F80);   //enabled is only chan 23-30 only 
+	mapChannels(1,0x0100);   //enabled is only chan 23-30 only 
 	mapChannels(2,0x0000);
 	mapChannels(3,0x0000);
 	mapChannels(4,0x0000);
